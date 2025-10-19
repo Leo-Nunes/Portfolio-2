@@ -1,6 +1,6 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-const EstiloGlobal = createGlobalStyle `
+const EstiloGlobal = createGlobalStyle`
   *{
     margin:0;
     padding:0;
@@ -10,6 +10,7 @@ const EstiloGlobal = createGlobalStyle `
 
     body{
     padding-top: 80px;
+    padding-bottom: 80px;
 
     @media (max-width: 768px) {
       padding-top: 16pox;
@@ -30,14 +31,9 @@ display: grid;
 grid-template-columns: 128px auto;
 column-gap: 56px;
 
-img{
-  max-width: 100%;
-  }
 
-  @media (max-width: 768px) {
-  max-widht: 80%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+@media (max-width: 768px) {
+max-widht: 80%;
+display: block;
 }
 `;
